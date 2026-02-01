@@ -24,4 +24,17 @@ console.log(typeof StringsomeNumber);
 console.log(StringsomeNumber);
 
 
+//  **************************Operations*********************
+value = 5
+let negvalue = -value
+console.log(negvalue);
+
+console.log(2**55);
+console.log(1 + 2 + "3");
+console.log(1 + 2 + 3);
+
+let gameCounter = 100
+gameCounter++
+console.log(++gameCounter);
+
 
