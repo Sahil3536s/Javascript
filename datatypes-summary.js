@@ -24,3 +24,24 @@ const myFunction = function(){
 }
 console.log(typeof myFunction);
 
+// ++++++++++++++++++++++++++++++++++++++++++++++++++Memory+++++++++++++++++++++++
+// Stack(Primitive) and Heap(Non-Primitive) memory
+// Stack
+
+let myName = "Rahul"
+let anotherName = "Sahil"
+anotherName = "Nanda"
+console.log(anotherName);
+
+// Heap
+let userone = {
+    emailId: "sehrawat3536@gmail.com",
+    upi: "sahil@hdfc"
+}
+
+let usertwo = userone
+usertwo.email= "sahil@gmail.com"
+console.log(userone.email);
+console.log(usertwo.email);
+
+
