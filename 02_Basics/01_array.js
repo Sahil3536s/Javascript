@@ -4,10 +4,10 @@ const myArr2 = new Array(1,2,3,4)
 console.log(myArr[1]);
 
 // Array Methods
-myArr.push(0) //  Add en element  to the arrray in the end
+myArr.push(0) //  Add en element  to the array in the end
 console.log(myArr);
 
-myArr.pop()  // Removes the last element in the arrray
+myArr.pop()  // Removes the last element in the array
 console.log(myArr);
 
 myArr.unshift(9) // Adds an element at the staring of the array or add at 0 index
