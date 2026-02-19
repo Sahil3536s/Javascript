@@ -1,6 +1,6 @@
 // Declare object with the help of constructor
 // const tinderUser = new Object()
-const tinderUser = {}   // 
+const tinderUser = {}   
 tinderUser.id = "123abc"
 tinderUser.name = "Sahil"
 tinderUser.isLoggedin = false
@@ -51,6 +51,30 @@ console.log(users[1].email);
 console.log(tinderUser);
 console.log(Object.keys(tinderUser));  // Gives all the datatypes value of this object
 console.log(Object.values(tinderUser));  // Gives values of the object
+
+// Object Destructuring
+const course = {
+     course_name: "Javascript",
+     fees: 999
+
+}
+// New method to access the object
+const {course_name} = course
+console.log(course_name);  // Instead of console.log(course.course_name)
+// Destructure it
+const {course_name: name} = course
+console.log(name);  // Destructure the course_name to name
+
+// An object without the name is json for e.g: below is the json
+// {
+//     name: "Sahil",
+//     "fees": 999,
+//     "coursename": "JS"
+// }
+
+// API is in the form of json api not always in the object {}, but sometimes in array form[]
+
+
 
 
 
