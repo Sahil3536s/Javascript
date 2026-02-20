@@ -1,34 +1,18 @@
-const regularUser = {
-    email: "sahil.com",
-    fullname: {    // Declare an array inside an array
-        userfullname:  {
-            firstname: "Sahil",
-            lastname: "Sehrawat"
-        }
-    } 
+function addNumbers(num1, num2){
+    let result = num1 + num2;
+    return result; 
+    
 }
-// const {firstname : name} = regularUser.fullname.userfullname
-// console.log(name);
+console.log( addNumbers(3,5));
 
-// const users = [
-//     {
-//         id : 1
-//     },
-//     {
-//         id: 2
-//     },
-//     {
-//         id: 3
-//     }
-// ]
-// console.log(users[0].id);
+function loginUserMessage(username){
+    if(username === undefined){
+        return "Enter a username"
+    }
+    return `${username} just logged in`
+}
+console.log(loginUserMessage("Sahil"));
+   console.log(loginUserMessage());
 
 
-// const obj1 = {0: "a", 1: "b"}
-// const obj2 = {2: "c", 3: "d"}
-
-// const obj3 = Object.assign(obj1, obj2)
-// console.log(obj3);
-
-// console.log(Object.keys(regularUser.fullname));
-
+   
