@@ -39,4 +39,31 @@ function loginUserMessage(username){
 console.log(loginUserMessage("Sahil"));
 console.log(loginUserMessage());
 
+function calculateCartPrice(...number){  // ... it is a rest or spread operator which is used to take multiple arguments and store them in an array. 
+    return number
+}
+console.log(calculateCartPrice(200,500,5,66,44,524));
+
+function Cart(val1, val2, ...items){
+    return items
+}
+console.log(Cart(200,4,22,56));  // 200 goes in val1, 4 goes in val2 and rest goes in array
+
+const user = {
+    name: "Sahil",
+    age: 22
+}
+function handleObject(anyobject){
+    return `Name is ${anyobject.name} and Age is ${anyobject.age}`
+}
+// console.log(handleObject(user));
+
+// we can also pass the object directly
+handleObject({
+    name : "Sam",
+    age : 25
+})
+
+console.log(handleObject(user))
+
 
